@@ -33,9 +33,9 @@ import java.io.File
 
     fun getValue(c: Char): Int {
         val pre = c.toInt() - 96
-        if (pre < 1) {
-            return c.toInt() - 38
+        return if (pre < 1) {
+            c.toInt() - 38
         } else {
-            return pre
+            pre
         }
     }
