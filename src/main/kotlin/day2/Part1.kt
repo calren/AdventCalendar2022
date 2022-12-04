@@ -13,6 +13,9 @@ fun calculateScore(fileName: String) {
     File(fileName).forEachLine {
         val choices = it.split(" ")
         sumOfScore += getScore(choices[1]) + resultScore(choices[0], choices[1])
+
+
+
     }
 
     print(sumOfScore)
